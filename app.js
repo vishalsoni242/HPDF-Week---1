@@ -54,13 +54,13 @@ app.get('/setcookie',function(req,res) {
 });
 
 
-app.get('/getcookie',function(req,res) {
+app.get('/getcookies',function(req,res) {
 
   res.send('Name : ' + JSON.stringify(req.cookies.name) + '<br/>' + 'Age : ' + JSON.stringify(req.cookies.age));
 });
 
 
-app.get('/robot.txt',function(req,res) {
+app.get('/robots.txt',function(req,res) {
   res.status(403);
   res.send('Access Denied !');
 });
